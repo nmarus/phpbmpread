@@ -175,9 +175,8 @@ function getbmpheader($bmpraw) {
 				'Vv_resolution/'.	//42-4b - vertical resolution
 				'Vcolor_palette/'.	//46-4b - number of colors in palette
 				'Vimp_colors/'		//50-4b - important colors
-		, $header);
-
-		return $header;
+				, $header);
+	return $header;
 	} else {
 		$error = 'BMP header data not found';
 		throw new Exception($error);
