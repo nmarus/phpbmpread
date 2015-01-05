@@ -11,8 +11,8 @@ resource function imagecreatefrombmp( resource $filename | $string $bmpraw )
 
 resource function printbmpinfo( resource $filename | $string $bmpraw )
 
-sample (bmp to png) as <img>
-============================
+sample (bmp to png) as img
+==========================
 
 <?php
 
