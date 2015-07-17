@@ -14,7 +14,7 @@ resource function printbmpinfo( resource $filename | $string $bmpraw )
 ##sample (bmp to png) as img##
 
 	<?php
-	require 'BMP.php'; //BMP support
+	require 'phpbmpread.php'; //BMP support
 	try {
 		$im = imagecreatefrombmp('ms4bit.bmp');
 	}
