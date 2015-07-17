@@ -7,9 +7,9 @@ This library will convert windows BMP files to img object to use with the PHP GD
 
 This is based on spec: http://en.wikipedia.org/wiki/BMP_file_format
 
-resource function imagecreatefrombmp( resource $filename | $string $bmpraw )
-
-resource function printbmpinfo( resource $filename | $string $bmpraw )
+	resource function imagecreatefrombmp( resource $filename | $string $bmpraw )
+	
+	resource function printbmpinfo( resource $filename | $string $bmpraw )
 
 ##sample (bmp to png) as img##
 
