@@ -1,5 +1,5 @@
-phpbmpread
-==========
+##phpbmpread##
+
 
 PHP library to read Windows BMP files
 
@@ -11,30 +11,20 @@ resource function imagecreatefrombmp( resource $filename | $string $bmpraw )
 
 resource function printbmpinfo( resource $filename | $string $bmpraw )
 
-sample (bmp to png) as img
-==========================
+##sample (bmp to png) as img##
 
-<?php
-
-require 'BMP.php'; //BMP support
-
-try {
-
-	$im = imagecreatefrombmp('ms4bit.bmp');
-	
-}
-
-catch(\Exception $e) {
-
-	echo($e);
-	exit;
-
-}
-
-	//output the image
-	header('Content-type: image/png');
-	imagepng($im);
-	imagedestroy($im);
-	exit;
-
-?>
+	<?php
+	require 'BMP.php'; //BMP support
+	try {
+		$im = imagecreatefrombmp('ms4bit.bmp');
+	}
+	catch(\Exception $e) {
+		echo($e);
+		exit;
+	}
+		//output the image
+		header('Content-type: image/png');
+		imagepng($im);
+		imagedestroy($im);
+		exit;
+	?>
